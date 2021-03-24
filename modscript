@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+sed '/!!/d; /*/d' ./shadowtester >> moddedShadow
+grep -oP '^[^\:]*\:\K[^\:]+' moddedShadow
